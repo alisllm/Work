@@ -1,0 +1,41 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Work"
+        xmlns:Properties="clr-namespace:Work.Properties" x:Class="Work.MainWindow"
+        mc:Ignorable="d" Height="334.564" Width="507.897" Background="#FF697D80" Topmost="True" Title="Авторизация" ResizeMode="NoResize">
+    <Grid Margin="0,46,3.333,41.333">
+        <WrapPanel HorizontalAlignment="Left" Height="138" Margin="109,69,0,0" VerticalAlignment="Top" Width="300">
+            <Label Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="296" Foreground="White" RenderTransformOrigin="0.5,0.5">
+
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-359.683"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+                <Label.DataContext>
+                    <Properties:Settings/>
+                </Label.DataContext>
+            </Label>
+            <ComboBox x:Name="combo" Width="299">
+                <ComboBoxItem Content="Директор"/>
+                <ComboBoxItem Content="Студент"/>
+                <ComboBoxItem Content="Абитуриент"/>
+                <ComboBoxItem Content="Учебная Часть"/>
+            </ComboBox>
+            <Label Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="299" Foreground="White"/>
+
+            <PasswordBox x:Name="pass" HorizontalAlignment="Left" VerticalAlignment="Top" Width="298" Height="23" BorderBrush="#FFFEDD15"/>
+            <Button Content="Войти" HorizontalAlignment="Left" VerticalAlignment="Top" Width="298" Click="Button_Click" Foreground="White" Background="#FF516547" Height="29"/>
+
+        </WrapPanel>
+        <Label Content="Колледж " HorizontalAlignment="Left" Margin="190,20,0,0" VerticalAlignment="Top" Height="44" Width="135" FontFamily="Rockwell Extra Bold" FontSize="24" Foreground="#FFD9F855" BorderBrush="#FFF32626" Background="{x:Null}"/>
+        <Border BorderBrush="#FFFCFF00" BorderThickness="1" HorizontalAlignment="Left" Height="21" Margin="109,95,0,0" VerticalAlignment="Top" Width="300"/>
+
+    </Grid>
+</Window>

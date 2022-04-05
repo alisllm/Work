@@ -1,0 +1,34 @@
+﻿<Window x:Class="Work.Study"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Work"
+        mc:Ignorable="d"
+        Title="Study" Height="450" Width="800">
+    <Grid Background="#FF529EA9">
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Margin="10,10,0,9.667" Width="595" LoadingRow="datagrid_LoadingRow_1" BorderBrush="#FFFFDC07" SelectedCellsChanged="datagrid_SelectedCellsChanged" IsReadOnly="True"/>
+        <Button Content="Добавить" Margin="644,46,62.333,0" VerticalAlignment="Top" Click="Button_Click" BorderBrush="#FFF5FF0D"/>
+        <ComboBox x:Name="combo" Margin="626,0,10.333,0" Height="29" VerticalAlignment="Top">
+            <ComboBoxItem Content="Специальности" Selected="ComboBoxItem_Selected" />
+            <ComboBoxItem Content="Отделения" Selected="ComboBoxItem_Selected_1" />
+            <ComboBoxItem Content="Абитуриенты" Selected="ComboBoxItem_Selected_2"/>
+            <ComboBoxItem Content="Студенты" Selected="ComboBoxItem_Selected_3" />
+            <ComboBoxItem Content="Расписание" Selected="ComboBoxItem_Selected_4"/>
+            <ComboBoxItem Content="Группы" Selected="ComboBoxItem_Selected_5"/>
+            <ComboBoxItem Content="Общежитие" Selected="ComboBoxItem_Selected_6"/>
+        </ComboBox>
+        <Button Content="Удалить" Margin="644,97,62.333,0" VerticalAlignment="Top" Click="Button_Click_1" BorderBrush="#FFECF60F"/>
+        <Button Content="Изменить" Margin="644,72,62.333,0" VerticalAlignment="Top" Height="20" Click="Button_Click_2" BorderBrush="#FFEBF50A"/>
+        <TextBox x:Name="text1"  Height="22" Margin="626,147,47.333,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFB3B2AB" TextChanged="text1_TextChanged"/>
+        <TextBox x:Name="text2"  Height="24" Margin="626,174,47.333,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="text2_TextChanged" />
+        <TextBox x:Name="text3"  Height="24" Margin="626,203,47.333,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="text3_TextChanged"/>
+        <TextBox x:Name="text4"  Height="23" Margin="626,284,47.333,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="text4_TextChanged"/>
+        <TextBox x:Name="text5"  Height="23" Margin="626,312,47.333,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="text5_TextChanged"/>
+        <ComboBox x:Name="combo1" Margin="626,232,47.333,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="combo2" Margin="626,257,47.333,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="data" HorizontalAlignment="Left" Margin="626,174,0,0" VerticalAlignment="Top" Visibility="Hidden" Width="132"/>
+        <ComboBox Name="combo3" Margin="626,284,47.333,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Button Content="Вернуться" HorizontalAlignment="Left" Margin="626,340,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_3"/>
+    </Grid>
+</Window>
